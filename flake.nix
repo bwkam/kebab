@@ -9,12 +9,34 @@
       submodules = true;
       flake = false;
     };
+    kha-src = {
+      type = "git";
+      url = "https://github.com/Kode/Kha.git?ref=main";
+      submodules = true;
+      flake = false;
+    };
+    kode_haxe-src = {
+      type = "git";
+      url = "https://github.com/Kode/haxe.git";
+      submodules = true;
+      flake = false;
+    };
+
+    khamake-src = {
+      type = "git";
+      url = "https://github.com/Kode/khamake.git";
+      submodules = true;
+      flake = false;
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     haxe-master-src,
+    kha-src,
+    kode_haxe-src,
+    khamake-src,
   }: let
     inherit (nixpkgs) lib;
     systems = [
@@ -28,10 +50,13 @@
   in {
     packages = perSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
-    in rec {
+    in {
       haxe = pkgs.callPackage ./haxe {
         inherit (pkgs) ocaml-ng;
         inherit haxe-master-src;
+      };
+      kha = pkgs.callPackage ./kha {
+        inherit pkgs kha-src kode_haxe-src khamake-src;
       };
     });
   };
