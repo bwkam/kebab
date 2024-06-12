@@ -14,6 +14,7 @@
   outputs = {
     self,
     nixpkgs,
+    haxe-master-src,
   }: let
     inherit (nixpkgs) lib;
     systems = [
@@ -28,7 +29,10 @@
     packages = perSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in rec {
-      haxe = pkgs.callPackage ./haxe;
+      haxe = pkgs.callPackage ./haxe {
+        inherit (pkgs) ocaml-ng;
+        inherit haxe-master-src;
+      };
     });
   };
 }
