@@ -5,7 +5,7 @@
   kode_haxe-src,
   khamake-src,
 }:
-callPackage ./kha.nix {
+import ./kha.nix {
   inherit
     (pkgs)
     stdenv
