@@ -1,0 +1,32 @@
+name: flake-update
+on:
+  workflow_dispatch: 
+  schedule:
+    - cron: '0 5 * * *' 
+
+jobs:
+  lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.6
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v11
+        with: 
+          nix-package-url: https://releases.nixos.org/nix/nix-2.18.1/nix-2.18.1-x86_64-linux.tar.xz
+      - name: Update flake lock
+        id: update
+        uses: DeterminateSystems/update-flake-lock@v21
+        with:
+          pr-title: "Update flake.lock" 
+          pr-labels: |
+            dependencies
+            automated
+      - name: merge
+        if: ${{ steps.update.outputs.pull-request-number }}
+        run: |
+          nix --version
+          if [ "${{ steps.update.outputs.pull-request-number }}" = "" ]; then echo "empty string"; fi
+          gh pr merge ${{ steps.update.outputs.pull-request-number }} --squash --delete-branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
