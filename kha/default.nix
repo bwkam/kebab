@@ -1,6 +1,5 @@
 {
   pkgs,
-  callPackage,
   kha-src,
   kode_haxe-src,
   khamake-src,

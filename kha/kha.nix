@@ -71,8 +71,8 @@
       done
     '';
   });
-in {
-  master = stdenv.mkDerivation {
+in
+  stdenv.mkDerivation {
     pname = "kha";
     version = "latest";
 
@@ -96,5 +96,4 @@ in {
       makeWrapper ${lib.getExe nodejs} $out/bin/kmake \
         --add-flags "$out/Tools/khamake/out/khamake.js"
     '';
-  };
-}
+  }
