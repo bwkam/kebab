@@ -1,0 +1,103 @@
+{
+  "nodes": {
+    "haxe-master-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1718186802,
+        "narHash": "sha256-qolfgVuoeU3k5zh7jyqQM4Pd+4WluemLFiC8spi9S/E=",
+        "ref": "refs/heads/development",
+        "rev": "2106be4578ee4899cdf7600ca8ede88823fbd979",
+        "revCount": 21241,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/HaxeFoundation/haxe"
+      },
+      "original": {
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/HaxeFoundation/haxe"
+      }
+    },
+    "kha-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713617576,
+        "narHash": "sha256-WEtDavuT97h87LON1U1Wh9ANICh32PYLfogy67NKesE=",
+        "ref": "refs/heads/main",
+        "rev": "e79b54f873556452b7b9c64d996aa66e53bc4eb9",
+        "revCount": 5312,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Kode/Kha.git?ref=main"
+      },
+      "original": {
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Kode/Kha.git?ref=main"
+      }
+    },
+    "khamake-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1711624567,
+        "narHash": "sha256-RgAvKhu4aUXtRrMGGVs/Dki0LYk0JWZkBI357uvuI50=",
+        "ref": "refs/heads/main",
+        "rev": "43c0b0393aea13e0f7466b9e0731a620a4399259",
+        "revCount": 1054,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Kode/khamake.git"
+      },
+      "original": {
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Kode/khamake.git"
+      }
+    },
+    "kode_haxe-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1709667376,
+        "narHash": "sha256-33ajDx+MkiezdLjG5AmIMpozf7p1aA472TdRyKIO3vw=",
+        "ref": "refs/heads/main",
+        "rev": "0ff79480373768879a0485294df7440347fb5b30",
+        "revCount": 20839,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Kode/haxe.git"
+      },
+      "original": {
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/Kode/haxe.git"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1718160348,
+        "narHash": "sha256-9YrUjdztqi4Gz8n3mBuqvCkMo4ojrA6nASwyIKWMpus=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "57d6973abba7ea108bac64ae7629e7431e0199b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "haxe-master-src": "haxe-master-src",
+        "kha-src": "kha-src",
+        "khamake-src": "khamake-src",
+        "kode_haxe-src": "kode_haxe-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
