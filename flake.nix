@@ -3,12 +3,20 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+
     haxe-master-src = {
       type = "git";
       url = "https://github.com/HaxeFoundation/haxe";
       submodules = true;
       flake = false;
     };
+    haxe-nightly-src = {
+      type = "git";
+      url = "https://github.com/HaxeFoundation/haxe?ref=development";
+      submodules = true;
+      flake = false;
+    };
+
     kha-src = {
       type = "git";
       url = "https://github.com/Kode/Kha.git?ref=main";
@@ -34,6 +42,7 @@
     self,
     nixpkgs,
     haxe-master-src,
+    haxe-nightly-src,
     kha-src,
     kode_haxe-src,
     khamake-src,
@@ -54,10 +63,18 @@
       haxe_master =
         (import ./haxe
           {
-            inherit haxe-master-src;
+            inherit haxe-master-src haxe-nightly-src;
             inherit (pkgs) ocaml-ng haxe;
           })
         .master;
+
+      haxe_nightly =
+        (import ./haxe
+          {
+            inherit haxe-master-src haxe-nightly-src;
+            inherit (pkgs) ocaml-ng haxe;
+          })
+        .nightly;
       kha = pkgs.callPackage ./kha {
         inherit pkgs kha-src kode_haxe-src khamake-src;
       };

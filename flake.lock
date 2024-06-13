@@ -18,6 +18,24 @@
         "url": "https://github.com/HaxeFoundation/haxe"
       }
     },
+    "haxe-nightly-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1718186802,
+        "narHash": "sha256-qolfgVuoeU3k5zh7jyqQM4Pd+4WluemLFiC8spi9S/E=",
+        "ref": "refs/heads/development",
+        "rev": "2106be4578ee4899cdf7600ca8ede88823fbd979",
+        "revCount": 21241,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/HaxeFoundation/haxe?ref=development"
+      },
+      "original": {
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/HaxeFoundation/haxe?ref=development"
+      }
+    },
     "kha-src": {
       "flake": false,
       "locked": {
@@ -91,6 +109,7 @@
     "root": {
       "inputs": {
         "haxe-master-src": "haxe-master-src",
+        "haxe-nightly-src": "haxe-nightly-src",
         "kha-src": "kha-src",
         "khamake-src": "khamake-src",
         "kode_haxe-src": "kode_haxe-src",
