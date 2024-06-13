@@ -51,7 +51,7 @@
     packages = perSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      haxe_master = pkgs.callPackage ./haxe {
+      haxe = pkgs.callPackage ./haxe {
         inherit (pkgs) ocaml-ng;
         inherit haxe-master-src;
       };
