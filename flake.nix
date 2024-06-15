@@ -1,5 +1,5 @@
 {
-  description = "haxe bad, kebab good";
+  description = "haxe/nix packages";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
