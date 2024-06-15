@@ -1,5 +1,5 @@
 # 🍢 Kebab
-This repository offers haxe-related packages that may be difficult to get working at first, this includes the haxe compiler itself.
+This repository offers haxe-related packages that may be difficult to get working at first, this includes the haxe compiler itself. A github action runs daily for updating the flake inputs.
 ## Usage
 ### Flake
 flake.nix
