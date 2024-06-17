@@ -57,11 +57,11 @@
     "khamake-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1711624567,
-        "narHash": "sha256-RgAvKhu4aUXtRrMGGVs/Dki0LYk0JWZkBI357uvuI50=",
+        "lastModified": 1718558749,
+        "narHash": "sha256-vveO0t7vhdwML45hCtej7zPsjJ2C8k5AmCZNOHPROck=",
         "ref": "refs/heads/main",
-        "rev": "43c0b0393aea13e0f7466b9e0731a620a4399259",
-        "revCount": 1054,
+        "rev": "6f9c81c5be2927c45f5f92f70e6a50a7f8d7d046",
+        "revCount": 1056,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Kode/khamake.git"
