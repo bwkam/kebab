@@ -39,11 +39,11 @@
     "kha-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1717944723,
-        "narHash": "sha256-Jd6JqzCkN0zdylQsB5uJM2P38c2v1bO8SFQW3HMZWfo=",
+        "lastModified": 1720953899,
+        "narHash": "sha256-1WGi5P36PCYNxjWZeno5RefdKRi3YscgKjLHOGUXxIU=",
         "ref": "refs/heads/main",
-        "rev": "2ecb14900c52d916856a690ab13a934964e0f80b",
-        "revCount": 5313,
+        "rev": "048fb3f0270f57b7a3dd0ecf34b23b867fb4e325",
+        "revCount": 5315,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Kode/Kha.git?ref=main"
@@ -57,11 +57,11 @@
     "khamake-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1718558749,
-        "narHash": "sha256-vveO0t7vhdwML45hCtej7zPsjJ2C8k5AmCZNOHPROck=",
+        "lastModified": 1720953950,
+        "narHash": "sha256-05SEvn1+bu/Q/v7GL8KrT04S/YkUspxcZ7EhKQZnnCA=",
         "ref": "refs/heads/main",
-        "rev": "6f9c81c5be2927c45f5f92f70e6a50a7f8d7d046",
-        "revCount": 1056,
+        "rev": "6214abefbdf18a34095ea7f3acf9a6d1db01d1e2",
+        "revCount": 1060,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Kode/khamake.git"
