@@ -39,11 +39,11 @@
     "kha-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1720953899,
-        "narHash": "sha256-1WGi5P36PCYNxjWZeno5RefdKRi3YscgKjLHOGUXxIU=",
+        "lastModified": 1723158523,
+        "narHash": "sha256-/piPs41nowOp/kxAT//lXyNxGksAoM8/hPeII8Mp924=",
         "ref": "refs/heads/main",
-        "rev": "048fb3f0270f57b7a3dd0ecf34b23b867fb4e325",
-        "revCount": 5315,
+        "rev": "977b9727b681a12bc3514b0b3a5bf215283ffe5f",
+        "revCount": 5317,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Kode/Kha.git?ref=main"
@@ -75,11 +75,11 @@
     "kode_haxe-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1709667376,
-        "narHash": "sha256-33ajDx+MkiezdLjG5AmIMpozf7p1aA472TdRyKIO3vw=",
+        "lastModified": 1723146396,
+        "narHash": "sha256-i10dUgWde8yx7PNqjUZcuvPCsuJ+e1qyl7bOPlrZCN4=",
         "ref": "refs/heads/main",
-        "rev": "0ff79480373768879a0485294df7440347fb5b30",
-        "revCount": 20839,
+        "rev": "81e4eb1772a7904043568726d97a469b564c5f63",
+        "revCount": 20877,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Kode/haxe.git"
