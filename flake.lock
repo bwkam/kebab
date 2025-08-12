@@ -39,11 +39,11 @@
     "kha-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1754438683,
-        "narHash": "sha256-Yx7rDQbJxwHpKuFhZ2IrYKoFu377S5SmvPr5giA8a1I=",
+        "lastModified": 1754921738,
+        "narHash": "sha256-i3VPz7ChgUQR4MaJYPt5FQbCYBGOyyfNbd/JirIWnII=",
         "ref": "refs/heads/main",
-        "rev": "3ec0976f5b039743c854aafc246540fcb05c4862",
-        "revCount": 5374,
+        "rev": "f3b9d967922e112b8fc69f29d339805420e3ba1e",
+        "revCount": 5377,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Kode/Kha.git?ref=main"
