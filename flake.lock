@@ -3,11 +3,11 @@
     "haxe-master-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1756979100,
-        "narHash": "sha256-8NQLVIL8sX1xHsnXKvVZb7VmXxXHKAv+EidtgP4ynKw=",
+        "lastModified": 1757408886,
+        "narHash": "sha256-SLBRtduyY1EY22pPiJPD/4EdMukTFjfazm93Po+HdZU=",
         "ref": "refs/heads/development",
-        "rev": "b60e9e026d4be24b431cf5e071f33525d7c527fc",
-        "revCount": 21742,
+        "rev": "bb980afb0a3c8994704157db0a4080836bad8d32",
+        "revCount": 21744,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/HaxeFoundation/haxe"
@@ -21,11 +21,11 @@
     "haxe-nightly-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1756979100,
-        "narHash": "sha256-8NQLVIL8sX1xHsnXKvVZb7VmXxXHKAv+EidtgP4ynKw=",
+        "lastModified": 1757408886,
+        "narHash": "sha256-SLBRtduyY1EY22pPiJPD/4EdMukTFjfazm93Po+HdZU=",
         "ref": "refs/heads/development",
-        "rev": "b60e9e026d4be24b431cf5e071f33525d7c527fc",
-        "revCount": 21742,
+        "rev": "bb980afb0a3c8994704157db0a4080836bad8d32",
+        "revCount": 21744,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/HaxeFoundation/haxe?ref=development"
@@ -92,11 +92,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1757068644,
-        "narHash": "sha256-NOrUtIhTkIIumj1E/Rsv1J37Yi3xGStISEo8tZm3KW4=",
+        "lastModified": 1757347588,
+        "narHash": "sha256-tLdkkC6XnsY9EOZW9TlpesTclELy8W7lL2ClL+nma8o=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "8eb28adfa3dc4de28e792e3bf49fcf9007ca8ac9",
+        "rev": "b599843bad24621dcaa5ab60dac98f9b0eb1cabe",
         "type": "github"
       },
       "original": {
